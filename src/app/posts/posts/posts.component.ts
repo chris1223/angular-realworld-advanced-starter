@@ -13,7 +13,7 @@ export class PostsComponent implements OnInit {
   constructor(private postService: PostService) { }
 
   ngOnInit() {
-    this.postService.getArticles().subscribe(articles =>{
+    this.postService.getArticles().subscribe(articles => {
       this.articles = articles.articles;
       console.log(articles);
     });
